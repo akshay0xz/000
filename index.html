@@ -15,7 +15,21 @@
     <input type="password" id="password" placeholder="Password" required><br>
     <button type="submit">Login</button>
                 
-            </form>
+            </form> 
+
+              <script>
+    function validateLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "1234") {
+        window.location.href = "home.html";
+      } else {
+        alert("Invalid login");
+      }
+      return false;
+    }
+            
             <div class="ear-l"></div>
             <div class="ear-r"></div>
             <div class="panda-face">
